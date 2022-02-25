@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="login_div" class="main-div">
+            <h3>Firebase Login Page</h3>
+            <br>
+            <input type="email" placeholder="username" id="usern">
+            <input type="password" placeholder="password" id="pwd">
+                <button onclick="login()">Submit</button>
+        </div>
+
+        <div id="user_div" class="loggedin-div">
+            <h3>Welcome User!</h3>
+            <p>You are currently logged in!</p>
+            <button onclick="logout()">Log out</button>
+        </div>
+
+        <script>
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyBlBc-6iUtspXp5SWWWeEp-1DV7ZA3Q_Cc",
+              authDomain: "registration-41dbb.firebaseapp.com",
+              projectId: "registration-41dbb",
+              storageBucket: "registration-41dbb.appspot.com",
+              messagingSenderId: "344591867937",
+              appId: "1:344591867937:web:4874027fe4c9dfbe67c360"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+        </script>
+        <script src="index.js"></script>
+    </body>
+    
+</html>
